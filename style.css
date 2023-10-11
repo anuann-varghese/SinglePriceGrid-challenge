@@ -70,7 +70,13 @@ body{
 }
 .lastbox{
     
-  background-color: hsl(179, 76%, 68%) ;  
+  background-color: hsl(179, 76%, 68%) ; 
+  color: white;
+  display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+    padding: 20px; 
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
