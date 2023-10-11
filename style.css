@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(204, 43%, 93%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    height: 90%;
+    width: 80%;
+    background-color: bisque;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+}
+.firstbox{
+    
+    background-color: white;
+}
+.middlebox{
+    
+    background-color: hsl(179, 66%, 52%);
+}
+.lastbox{
+    
+  background-color: hsl(179, 76%, 68%) ;  
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .container{
+        height: 50%;
+        width: 50%;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+       grid-template-areas: "firstbox firstbox"
+       "middlebox lastbox"
+       ;
+        
+    }
+    .firstbox{grid-area: firstbox;}
+    .middlebox{grid-area: middlebox;}
+    .lastbox{grid-area: lastbox;}
+
+     
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+
