@@ -60,6 +60,7 @@ body{
     height: 50px;
     background-color:hsl(71, 73%, 54%) ;
     color: white;
+    border-color:hsl(71, 73%, 54%) ;
     border-radius: 10px;
 }
 .price-text{
